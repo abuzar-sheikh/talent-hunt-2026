@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Talent Hunt for New Poets</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <div class="max-w-4xl mx-auto p-4 md:p-8 bg-white shadow-lg my-6 rounded-lg">
+
+    <h1 class="text-2xl md:text-3xl font-bold text-center text-red-600">
+      🎤 Talent Hunt for New Poets
+    </h1>
+
+    <p class="text-center mt-2 font-semibold">
+      ٹیلنٹ ہنٹ برائے شعراء
+    </p>
+
+    <p class="text-center mt-2">
+      <strong>Founder:</strong> Danish Zia
+    </p>
+
+    <div class="bg-yellow-100 border-l-4 border-yellow-500 p-4 my-4">
+      <p class="font-semibold">
+        Final Selection: Sunday, 14th February 2026 — Mumbai
+      </p>
+    </div>
+
+    <p class="my-4 text-sm leading-relaxed">
+      <strong>مقصد:</strong>
+      نئے اور ابھرتے ہوئے شعراء کی تخلیقی صلاحیتوں کو سامنے لاکر اردو زبان و ادب کے فروغ کے لئے
+      ایک مضبوط پلیٹ فارم فراہم کرنا تاکہ ان کو اپنے جذبات اور تخیل کا اظہار کرنے کا موقع ملے۔
+    </p>
+
+    <hr class="my-6"/>
+
+    <!-- FORM -->
+    <form action="https://formspree.io/f/mlggoekg" method="POST" class="space-y-4">
+
+      <input type="text" name="name" placeholder="Candidate Name / نام امیدوار" required class="w-full border p-3 rounded"/>
+
+      <input type="text" name="father_name" placeholder="Father's Name / والد کا نام" required class="w-full border p-3 rounded"/>
+
+      <input type="number" name="age" placeholder="Age (Below 35 only)" required class="w-full border p-3 rounded"/>
+
+      <textarea name="address" placeholder="Address / پتہ" required class="w-full border p-3 rounded"></textarea>
+
+      <input type="tel" name="mobile" placeholder="Mobile Number (WhatsApp Required)" required class="w-full border p-3 rounded"/>
+
+      <div>
+        <p class="font-semibold mb-2">Poetry Genres (شعری اصناف):</p>
+        <label class="block"><input type="checkbox" name="genre" value="Ghazal"/> Ghazal (غزل)</label>
+        <label class="block"><input type="checkbox" name="genre" value="Nazm"/> Nazm (نظم)</label>
+        <label class="block"><input type="checkbox" name="genre" value="Humor"/> Humor (مزاحیہ)</label>
+      </div>
+
+      <div>
+        <p class="font-semibold mb-2">
+          Have you participated in any Mushaira before?
+        </p>
+        <label><input type="radio" name="mushaira" value="Yes"/> Yes</label>
+        <label class="ml-4"><input type="radio" name="mushaira" value="No"/> No</label>
+      </div>
+
+      <input type="text" name="mushaira_place" placeholder="If yes, where?" class="w-full border p-3 rounded"/>
+
+      <div class="bg-blue-50 border border-blue-300 p-4 rounded text-sm">
+        <strong>Important:</strong><br/>
+        🎥 Please send a 4–5 minute poetry video (Tarannum or Tahet) on WhatsApp after submitting this form.
+      </div>
+
+      <div class="bg-red-50 border border-red-300 p-4 rounded text-sm">
+        <strong>Note:</strong>
+        <ul class="list-disc ml-5">
+          <li>Age must not exceed 35 years</li>
+          <li>Travel, food & stay in Mumbai will be self-arranged</li>
+          <li>Only selected poets will be contacted</li>
+          <li>Best poets will get certificate & Sharjah Mushaira opportunity</li>
+        </ul>
+      </div>
+
+      <label class="block text-sm">
+        <input type="checkbox" required />
+        I agree to all terms & conditions of Sharjah Mushaira
+      </label>
+
+      <button type="submit"
+        class="w-full bg-red-600 text-white py-3 rounded font-semibold hover:bg-red-700 transition">
+        Submit Registration
+      </button>
+
+    </form>
+
+    <hr class="my-6"/>
+
+    <div class="text-center text-sm">
+      <p class="font-semibold">Coordinators:</p>
+      <p>Jalal Siddiqi — 📞 8707044749</p>
+      <p>Maikash Azmi — 📞 99191 42755</p>
+    </div>
+
+  </div>
+
+</body>
+</html>
