@@ -10,7 +10,11 @@
     <div
       class="max-w-4xl mx-auto p-4 md:p-8 bg-white shadow-lg my-6 rounded-lg"
     >
-      <img class="max-w-[80px] m-auto mb-4" src="./sharjah.png" alt="" />
+      <img
+        class="max-w-[100px] m-auto mb-4 border border-blue-600 bg-blue-50 p-1 rounded-md"
+        src="./sharjah.png"
+        alt=""
+      />
       <h1 class="text-3xl md:text-4xl font-bold text-center text-red-600">
         Talent Hunt for New Poets - 2026
       </h1>
@@ -57,18 +61,33 @@
             ایک ویڈیو اپنی آواز (ترنم یا تحت) میں ۴ تا ۵ منٹ کی دئے گئے واٹس ایپ
             نمبر پر بھیجیں۔
             <br />
-            <b> 9506162657 or 9919142755 </b>
+            <a
+              href="https://wa.me/919506162657?text=Hello%20I%20want%20to%20register%20for%20Talent%20Hunt"
+              target="_blank"
+              class="text-red-600 font-semibold hover:text-blue-600 underline"
+            >
+              +91 9506162657
+            </a>
+
+            <a
+              href="https://wa.me/919919142755?text=Hello%20I%20want%20to%20register%20for%20Talent%20Hunt"
+              target="_blank"
+              class="text-red-600 font-semibold hover:text-blue-600 underline"
+            >
+              +91 9919142755
+            </a>
           </span>
         </div>
       </div>
 
       <!-- FORM -->
       <form id="talentForm" class="space-y-4">
-        <p class="text-red-600 text-center">
+        <p class="text-center">
           <b class="text-lg">Registration Form / (رجسٹریشن فارم) <br /></b>
-          <span class="text-gray-400 font-semibold">
-            Read & then fill the form very carefully.
-          </span>
+        </p>
+        <p class="text-center text-sm bg-red-600 py-2 text-white font-bold">
+          <span class="text-yellow-200"> 10th February </span> is the last date
+          of Registration / فروری ۱۰ رجسٹریشن کی آخری تاریخ ہے
         </p>
         <input
           type="text"
@@ -104,13 +123,13 @@
         <input
           type="tel"
           name="mobile"
-          placeholder="Mobile Number / موبائل نمبر ( واٹس اپ لازمی)"
+          placeholder="Mobile Number / موبائل نمبر ( واٹس ایپ)"
           required
           class="w-full border p-3 rounded border border-blue-200"
         />
 
         <div>
-          <p class="font-semibold mb-2">Poetry Genres (شعری اصناف):</p>
+          <p class="font-semibold mb-2">Poetry Genres / (شعری اصناف):</p>
           <label class="block"
             ><input type="checkbox" name="genre" value="Ghazal" /> Ghazal
             (غزل)</label
@@ -169,15 +188,36 @@
           </p>
         </div>
 
+        <div
+          class="bg-yellow-50 text-center border border-yellow-500 rounded-md p-3"
+        >
+          <p class="font-bold pb-4 text-sm text-red-600">
+            Send candidate reference with screenshot of fee payment on Whatsapp
+            <br />
+            فیس ادائیگی کے ساتھ امیدوار کے حوالہ کا اسکرین شاٹ بھیجیں
+          </p>
+
+          <img class="h-[250px] m-auto" src="./qr.jpeg" alt="QR-Code" />
+          <h3 class="font-bold">JALALUDDIN SIDDIQI</h3>
+          <h5 class="font-bold pb-4">PhonePe . UPI ID: jalalsiddiqi@ibl</h5>
+          <p
+            class="text-green-600 font-bold text-center border border-yellow-500 py-2 bg-yellow-100"
+          >
+            Fee: ₹1000/- (Non Refundable)
+          </p>
+          <a
+            href="./qr.jpeg"
+            download="QR-Code-Jalaluddin-Siddiqi.jpeg"
+            class="inline-block mt-4 bg-blue-300 border border-blue-600 hover:bg-blue-400 transition-all duration-300 text-black font-semibold px-4 py-2 rounded-lg"
+          >
+            Download QR code
+          </a>
+        </div>
+
         <div class="w-full text-center">
           <p class="font-bold text-center text-green-700">
             For the candidate <br />
             برائے امیدوار
-          </p>
-          <p
-            class="mt-4 text-green-600 font-bold text-center border-l-4 border-red-500 py-2 bg-red-50"
-          >
-            Fee: ₹1000/- (Non Refundable)
           </p>
 
           <p class="bg-green-100 p-2 mt-2 rounded-lg border border-green-300">
@@ -227,7 +267,7 @@
 
       const formData = new FormData(form);
 
-      const response = await fetch("https://formspree.io/f/mlggoekg", {
+      const response = await fetch("https://formspree.io/f/xdaaqpje", {
         method: "POST",
         body: formData,
         headers: {
