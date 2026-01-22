@@ -10,16 +10,16 @@
     <div
       class="max-w-4xl mx-auto p-4 md:p-8 bg-white shadow-lg my-6 rounded-lg"
     >
-      <img class="max-w-[80px] m-auto mb-4" src="/sharjah.png" alt="" />
+      <img class="max-w-[80px] m-auto mb-4" src="./sharjah.png" alt="" />
       <h1 class="text-3xl md:text-4xl font-bold text-center text-red-600">
         Talent Hunt for New Poets - 2026
       </h1>
 
       <p class="text-center mt-2 font-semibold text-3xl md:text-3xl">
-        ۲۰۲۶ - ٹیلنٹ ہنٹ برائے شعراء
+        ٹیلنٹ ہنٹ برائے شعراء - ٢٠٢٦
       </p>
 
-      <p class="text-center mt-4"><strong>Founder:</strong> Danish Zia</p>
+      <p class="text-center mt-4"><strong>Founder: Danish Zia</strong></p>
 
       <div class="bg-yellow-100 border-l-4 border-yellow-500 p-4 my-4">
         <p class="font-semibold text-center">
@@ -36,14 +36,39 @@
 
       <hr class="my-6" />
 
-      <!-- FORM -->
-      <form
-        action="https://formspree.io/f/mlggoekg"
-        method="POST"
-        class="space-y-4"
+      <div
+        class="w-full mb-4 bg-yellow-50 border space-y-2 border-yellow-300 flex flex-col items-center justify-center p-4 mt-5"
       >
-        <p class="text-red-600 underline">
-          Read & then fill the form very carefully.
+        <p class="font-bold text-center text-red-600 text-lg mb-3">
+          How to submit the form <br />
+          <span class="bg-red-600 text-white px-4 py-1">
+            فارم جمع کرنے کا طریقہ
+          </span>
+        </p>
+        <p class="text-center">
+          1. Fill out the form completely <br />
+          <span>فارم مکمل پُر کریں۔</span>
+        </p>
+        <div class="bg-yellow-100 border border-yellow-300 p-4 rounded text-sm">
+          <strong>Important:</strong><br />
+          🎥 Please send a 4–5 minute poetry video (Tarannum or Tahet) on
+          WhatsApp after submitting this form. <br />
+          <span class="text-right">
+            ایک ویڈیو اپنی آواز (ترنم یا تحت) میں ۴ تا ۵ منٹ کی دئے گئے واٹس ایپ
+            نمبر پر بھیجیں۔
+            <br />
+            <b> 9506162657 or 9919142755 </b>
+          </span>
+        </div>
+      </div>
+
+      <!-- FORM -->
+      <form id="talentForm" class="space-y-4">
+        <p class="text-red-600 text-center">
+          <b class="text-lg">Registration Form / (رجسٹریشن فارم) <br /></b>
+          <span class="text-gray-400 font-semibold">
+            Read & then fill the form very carefully.
+          </span>
         </p>
         <input
           type="text"
@@ -120,42 +145,15 @@
           class="w-full border p-3 rounded border border-blue-200"
         />
 
-        <div
-          class="w-full bg-yellow-50 border space-y-2 border-yellow-300 flex flex-col items-center justify-center p-4 mt-5"
-        >
-          <p class="font-bold text-center text-red-600 text-lg mb-3">
-            How to submit the form <br />
-            <span class="bg-red-600 text-white px-4 py-1">
-              فارم جمع کرنے کا طریقہ
-            </span>
-          </p>
-          <p class="text-center">
-            1. Fill out the form completely <br />
-            <span>فارم مکمل پُر کریں۔</span>
-          </p>
-          <div
-            class="bg-yellow-100 border border-yellow-300 p-4 rounded text-sm"
-          >
-            <strong>Important:</strong><br />
-            🎥 Please send a 4–5 minute poetry video (Tarannum or Tahet) on
-            WhatsApp after submitting this form. <br />
-            <span class="text-right">
-              ایک ویڈیو اپنی آواز (ترنم یا تحت) میں ۴ تا ۵ منٹ کی دئے گئے واٹس
-              ایپ نمبر پر بھیجیں۔
-              <br />
-              8707044749 or 9919142755
-            </span>
-          </div>
-        </div>
-
         <div class="bg-red-50 border border-red-300 p-4 rounded text-sm">
           <strong>Note:</strong>
           <ul class="list-disc ml-5">
-            <li>Age must not exceed 35 years</li>
+            <li>Age must not exceed <b class="text-green-600">35 years</b></li>
             <li>Travel, food & stay in Mumbai will be self-arranged</li>
-            <li>Only selected poets will be contacted</li>
             <li>
-              Best poets will get certificate & Sharjah Mushaira opportunity
+              Only selected poets will be informed. The best poets will be given
+              a special certificate and the selected ones will be represented in
+              the <b>Sharjah Mushaira</b>.
             </li>
           </ul>
           <ul class="text-right mt-4 space-y-1">
@@ -166,7 +164,7 @@
             <li>صرف منتخب شعراء کو آگاہ کیا جائے گا۔</li>
           </ul>
           <p class="text-right mt-1">
-            بہترین شعراء کو خصوصی سرٹیفکیٹ اور منتخب کو *شارجہ مشاعرے* میں
+            بہترین شعراء کو خصوصی سرٹیفکیٹ اور منتخب کو <b>شارجہ مشاعرے</b> میں
             نمائندگی دی جائے گی۔
           </p>
         </div>
@@ -176,6 +174,12 @@
             For the candidate <br />
             برائے امیدوار
           </p>
+          <p
+            class="mt-4 text-green-600 font-bold text-center border-l-4 border-red-500 py-2 bg-red-50"
+          >
+            Fee: ₹1000/- (Non Refundable)
+          </p>
+
           <p class="bg-green-100 p-2 mt-2 rounded-lg border border-green-300">
             I am happy to join this talent hunt, I agree to all the terms and
             conditions of Sharjah Mushaira.
@@ -204,9 +208,39 @@
 
       <div class="text-center text-sm">
         <p class="font-semibold">Coordinators:</p>
-        <p>Jalal Siddiqi — 📞 8707044749</p>
-        <p>Maikash Azmi — 📞 99191 42755</p>
+        <p>Jalal Siddiqi — 📞 <b>8707044749</b></p>
+        <p>Maikash Azmi — 📞 <b>9919142755</b></p>
+      </div>
+      <div class="text-center mt-4 text-sm">
+        <b>Office Address : </b>
+        104, Poonam plaza, Naya Nagar, Near Shams Masjid Meera Road Thane -
+        401107
       </div>
     </div>
   </body>
+
+  <script>
+    const form = document.getElementById("talentForm");
+
+    form.addEventListener("submit", async function (e) {
+      e.preventDefault();
+
+      const formData = new FormData(form);
+
+      const response = await fetch("https://formspree.io/f/mlggoekg", {
+        method: "POST",
+        body: formData,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      if (response.ok) {
+        window.location.href =
+          "https://abuzar-sheikh.github.io/talent-hunt-2026/thanks.html";
+      } else {
+        alert("Something went wrong. Please try again.");
+      }
+    });
+  </script>
 </html>
