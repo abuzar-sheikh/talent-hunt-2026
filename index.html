@@ -10,11 +10,22 @@
     <div
       class="max-w-4xl mx-auto p-4 md:p-8 bg-white shadow-lg my-6 rounded-lg"
     >
-      <img
-        class="max-w-[100px] m-auto mb-4 border border-blue-600 bg-blue-50 p-1 rounded-md"
-        src="./sharjah.png"
-        alt=""
-      />
+      <div class="relative w-full flex justify-center items-center">
+        <!-- Background Text -->
+        <h1
+          class="absolute left-0 w-full text-center font-bold text-6xl z-10 opacity-[0.2]"
+        >
+          SHARJAH MUSHAIRA
+        </h1>
+
+        <!-- Foreground Image -->
+        <img
+          class="relative z-20 max-w-[120px]"
+          src="./sharjahwithWhitw.png"
+          alt=""
+        />
+      </div>
+
       <h1 class="text-3xl md:text-4xl font-bold text-center text-red-600">
         Talent Hunt for New Poets - 2026
       </h1>
@@ -32,10 +43,13 @@
       </div>
 
       <p class="my-4 text-sm text-right leading-relaxed">
-        <strong>مقصد:</strong>
-        نئے اور ابھرتے ہوئے شعراء کی تخلیقی صلاحیتوں کو سامنے لاکر اردو زبان و
-        ادب کے فروغ کے لئے ایک مضبوط پلیٹ فارم فراہم کرنا تاکہ ان کو اپنے جذبات
-        اور تخیل کا اظہار کرنے کا موقع ملے۔
+        <strong>🎯مقصد:</strong>
+        اپنے پیارے ملک ہندوستان کے نئے اور ابھرتے ہوئے شعراء کی تخلیقی صلاحیتوں
+        کو سامنے لاکر اردو زبان و ادب کے فروغ کے لیے ایک مضبوط پلیٹ فارم فراہم
+        کرنا، تاکہ انہیں اپنے جذبات اور تخیل کے اظہار کا موقع ملے اور پوشیدہ فن
+        کی شناخت و رہنمائی ہو سکے۔ اس ٹیلنٹ ہنٹ کے ذریعے منتخب شعراء کو شارجہ
+        (یو اے ای) میں ہونے والے عالمی مشاعرے میں موقع فراہم کرنا شارجہ مشاعرہ
+        کی کوشش اور منشاء ہے
       </p>
 
       <hr class="my-6" />
@@ -188,6 +202,7 @@
           </p>
         </div>
 
+        <!-- QR Code -->
         <div
           class="bg-yellow-50 text-center border border-yellow-500 rounded-md p-3"
         >
@@ -212,6 +227,25 @@
           >
             Download QR code
           </a>
+        </div>
+
+        <div class="space-y-4">
+          <p class="mb-4">
+            Have you submitted the registration fee (₹1000)? <br />
+            <span class="text-right">
+              کیا آپ نے رجسٹریشن فیس (₹1000) جمع کر دی ہے؟
+            </span>
+          </p>
+
+          <label class="bg-blue-50 border border-blue-600 p-2 mr-6">
+            <input type="radio" name="fee_paid" value="Yes" required />
+            Yes / ہاں
+          </label>
+
+          <label class="bg-blue-50 border border-blue-600 p-2 mr-6">
+            <input type="radio" name="fee_paid" value="No" />
+            After sometime / کچھ وقت بعد
+          </label>
         </div>
 
         <div class="w-full text-center">
